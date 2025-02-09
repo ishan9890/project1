@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+  }
+  
+  .mainn{
+      width: 100%;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    
+      /* background:#000000; */
+      background-image: url("C:\Users\acer\Desktop\Softwarica\project\src\images\bg1.jpg");
+    
+    /* background: linear-gradient(180deg, rgba(227,173,228,1) 0%, rgba(166,105,144,1) 45%, rgba(90,40,91,1) 100%); */
+    }
+    
+    .container{
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      /* background-color: blueviolet;s */
+      padding-top: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("C:\Users\acer\Desktop\Softwarica\project\src\images\bg1.jpg");
+      border-radius: 15;
+    }
+    
+    .container .boxes{
+      display: flex;
+      background-color: rgb(0, 0, 0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15%;
+      height: 500px;
+      align-items: center;
+    
+      /* border: 4px solid rgb(59, 25, 60); */
+      
+    
+     
+    }
+    
+    .container .box1{
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      
+      height: 380px;
+      
+      border-radius: 15%;
+    
+      
+    }
+    
+    .userForm .show{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 40px;
+      color: aliceblue;
+      
+    }
+    
+    form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    } 
+    
+    .userForm .userData{
+      width: 100%;
+      display: flex;
+      padding-top: 8px;
+      justify-content: center;
+    
+    }
+    
+    .userData .email{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      padding: 5px;
+      border: 2px solid black;
+      background-color: aliceblue;
+      border-radius: 20px;
+    
+    }
+    
+    .userData .password{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 5px;
+      background-color: aliceblue;
+      border: 2px solid black;
+      border-radius: 20px;
+    
+    }
+    
+    input{
+      border: none; 
+      outline: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding-left: 2px;
+      /* background: transparent;s */
+     
+    }
+    
+    
+    
+    .button1{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid;
+      border-radius: 25px;
+      padding: 7px;
+      background-color: aliceblue;
+      border: none;
+    }
+    
+    button{
+      border: none;
+      width: 100%;
+    }
+    
+  
+    button:hover {
+      font-weight: bold;
+      transform: scale(1.0); /* Slightly enlarge the button */
+      cursor: pointer;
+    }
+    
+    
+    .signup{
+      padding-top: 40px;
+    
+    }
+    
+    
+    .box2{
+      width: 300px;
+      background-color: antiquewhite;
+      height: 460px;
+      background-color: rgba(255,255,255,0.95);
+      background-image: url("../../../images/10.jpg");
+      background-size: cover;
+      background-position: center;
+      /* background-position:bottom; */
+      /* Semi transparent */
+     
+      padding: 20px;
+      border-radius: 15%;
+     
+    }
+    
+    
+    .signup p{
+      color: aliceblue;
+    }
+    
+    
+    a{
+      color: aliceblue;
+      text-decoration: none;
+    }
+    
+    a :hover{
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn-text{
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      font-weight: 20px;
+    }
+    .txt-login{
+      color: white;
+    }
+    .sub{
+      color: white;
+    }
