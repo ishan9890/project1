@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
+import { useNavigate } from "react-router-dom"; 
 import "./Verify.css";
 
 const Verification = () => {
   const [licenseFile, setLicenseFile] = useState(null);
   const [citizenshipFile, setCitizenshipFile] = useState(null);
 
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate(); 
 
   const handleFileChange = (event, setFile) => {
     const file = event.target.files[0];
@@ -16,7 +16,7 @@ const Verification = () => {
   };
 
   const handleNext = () => {
-    // Navigate to the payment page when the button is clicked
+    
     navigate("/paymentmethods");
   };
 
