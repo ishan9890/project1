@@ -1,15 +1,23 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 import "./Verify.css";
 
 const Verification = () => {
   const [licenseFile, setLicenseFile] = useState(null);
   const [citizenshipFile, setCitizenshipFile] = useState(null);
 
+  const navigate = useNavigate(); // Initialize the navigate function
+
   const handleFileChange = (event, setFile) => {
     const file = event.target.files[0];
     if (file) {
       setFile(file.name);
     }
+  };
+
+  const handleNext = () => {
+    // Navigate to the payment page when the button is clicked
+    navigate("/paymentmethods");
   };
 
   return (
@@ -45,7 +53,10 @@ const Verification = () => {
 
         <p className="verification-text">It may take time to verify</p>
 
-        <button className="next-button">Next</button>
+        {/* Add the onClick handler to the Next button */}
+        <button className="next-button" onClick={handleNext}>
+          Next
+        </button>
       </div>
     </div>
   );

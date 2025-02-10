@@ -20,7 +20,7 @@ import Vehicles from './Components/pages/Vehicles'
 import Booking from './Components/pages/Booking';
 import Signup from './Components/pages/loginsignup/Signup.jsx';
 import Verify from './Components/pages/Verify.jsx';
-
+import PaymentMethods from './Components/pages/PaymentMethods.jsx';
 
 const App=()=> {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -40,6 +40,7 @@ const App=()=> {
         <Route path="/booking" element={<Booking/>} />
         <Route path="/sign-up" element={<Signup/>} />
         <Route path="/verify" element={<Verify/>} />
+        <Route path="/paymentmethods" element={<PaymentMethods/>} />
       </Routes>
     </Router>
     </AuthProvider>

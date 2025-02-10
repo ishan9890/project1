@@ -1,0 +1,143 @@
+/* Full-screen background with gradient */
+.background {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+  }
+  
+  /* Centered container */
+  .payment-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 700px;
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Title */
+  .payment-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  /* Payment options grid */
+  .payment-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 25px;
+    justify-content: center;
+  }
+  
+  /* Each payment item (image + button) */
+  .payment-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  /* Payment images */
+  .payment-image {
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Specific images */
+  .khalti {
+    background-image: url("../../images/khaltilogo.png");
+    
+  }
+  
+  .esewa {
+    background-image: url("../../images/esewa.png");
+  }
+  
+  .imepay {
+    background-image: url("../../images/imepay.png");
+  }
+  
+  .hamropay {
+    background-image: url("../../images/hamropay.jpg");
+  }
+  
+  .bank {
+    background-image: url("../../images/banktransfer.png");
+  }
+  
+  /* Responsive image scaling */
+  @media (max-width: 768px) {
+    .payment-image {
+      width: 100px;
+      height: 100px;
+      
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .payment-image {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  
+  /* Payment buttons */
+  .payment-button {
+    background: white;
+    color: #000;
+    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .payment-button:hover {
+    background: #e0e0e0;
+    transform: translateY(-3px);
+  }
+  
+  /* OR text */
+  .or-text {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 25px 0;
+    color: white;
+  }
+  
+  /* Cash Payment Button */
+  .cash-button {
+    background: white;
+    color: #000;
+    font-weight: bold;
+    padding: 16px 32px;
+    border-radius: 10px;
+    border: 3px solid #000;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .cash-button:hover {
+    background: #e0e0e0;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .payment-options {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  

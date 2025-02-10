@@ -2,32 +2,30 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Bikes.css';
 
+const bikes = [
+  { id: 1, name: "Bike-1", image: "bike1" },
+  { id: 2, name: "Bike-2", image: "bike2" },
+  { id: 3, name: "Bike-3", image: "bike3" },
+];
+
 const Bikes = () => {
   const navigate = useNavigate();
 
-  const handleBooking = () => {
-    navigate('/booking');
+  const handleBooking = (bikeName) => {
+    navigate(`/booking?bike=${bikeName}`);
   };
 
   return (
-    <div className="Bike-rental">
+    <div className="bike-rental">
       <h1>Available Bikes</h1>
-      <div className="Bike-list">
-        <div className="Bike-item">
-          <div className="Bike-image Bike1"></div>
-          <p>Bike-1</p>
-          <button className="book-btn" onClick={handleBooking}>Book Now</button>
-        </div>
-        <div className="Bike-item">
-          <div className="Bike-image Bike2"></div>
-          <p>Bike-2</p>
-          <button className="book-btn" onClick={handleBooking}>Book Now</button>
-        </div>
-        <div className="Bike-item">
-          <div className="Bike-image Bike3"></div>
-          <p>Bike-3</p>
-          <button className="book-btn" onClick={handleBooking}>Book Now</button>
-        </div>
+      <div className="bike-list">
+        {bikes.map((bike) => (
+          <div key={bike.id} className="bike-item">
+            <div className={`bike-image ${bike.image}`} role="img" aria-label={bike.name}></div>
+            <p>{bike.name}</p>
+            <button className="book-btn" onClick={() => handleBooking(bike.name)}>Book Now</button>
+          </div>
+        ))}
       </div>
     </div>
   );
