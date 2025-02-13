@@ -21,6 +21,8 @@ import Booking from './Components/pages/Booking';
 import Signup from './Components/pages/loginsignup/Signup.jsx';
 import Verify from './Components/pages/Verify.jsx';
 import PaymentMethods from './Components/pages/PaymentMethods.jsx';
+import MyProfile from './Components/pages/MyProfile.jsx';
+import MyOrders from './Components/pages/MyOrders.jsx';
 
 const App=()=> {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -41,6 +43,9 @@ const App=()=> {
         <Route path="/sign-up" element={<Signup/>} />
         <Route path="/verify" element={<Verify/>} />
         <Route path="/paymentmethods" element={<PaymentMethods/>} />
+        <Route path="/my-profile" element={<MyProfile />} />
+        <Route path="/my-orders" element={<MyOrders />} />
+
       </Routes>
     </Router>
     </AuthProvider>
